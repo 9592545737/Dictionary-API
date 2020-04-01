@@ -8,9 +8,8 @@ class Dictionary{
 
     const wordData = await wordResponse.json();
 
-    return {
-        wordData
-        }
+    return wordData;
+        
     }
 }
 // https://www.dictionaryapi.com/api/v3/references/learners/json/apple?key=your-api-key

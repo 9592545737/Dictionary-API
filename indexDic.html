@@ -5,28 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Inria+Sans|PT+Serif|Rubik&display=swap');
+    h2{font-family: 'PT Serif', serif;
+    }
+    h4{font-family: 'Rubik', sans-serif;
+      color: lightseagreen
+    }
+    p{font-family: 'Inria Sans', sans-serif;}
+    </style>
   <title>Merriam-Webster Dictionary</title>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col md-6 mx-auto text-center bg-info mt-5 p-5">
+      <div class="col md-12 mx-auto text-center bg-info mt-5 p-5">
         <h1>Merriam-Webster Dictionary</h1>
         <hr><br>
         <form id="searchBar">
-          <!-- <div class="form-group"> -->
             <div class="input-group">
             <span class="input-group-text">Search</span>
             <input type="text" class="form-control" id="wordInput" placeholder="Enter a word to search...">
             </div>
-          <!-- </div>        -->
-        </form>
+         </form>
       </div>         
       </div>
+      <br>
+      <div id="viewData"></div>
     </div>
-    <br>
-    <div id="viewData"></div>
   </div>
   
   <footer class="mt-5 p-3 text-center bg-light">Marium Webster &copy;</footer>

@@ -1,5 +1,7 @@
 // Init Dictionary
 const dictionary = new Dictionary;
+// Init UI+
+const ui = new UI; 
 // Search Input
 const searchWord = document.getElementById('wordInput');
 // Event Listerner
@@ -12,6 +14,8 @@ searchWord.addEventListener('keyup', (e) => {
         dictionary.getWord(word) 
         .then(data => {
             console.log(data);
+            
+            ui.showData(data,word);
         })
     }
 });
